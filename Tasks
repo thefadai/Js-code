@@ -1,0 +1,161 @@
+/*  // FIRST ONE;
+function isPointInShadedRegion(x, y) {
+    // Check if the point is above or on the parabola y = x^2 - 2
+    if (y < x * x - 2) {
+      return false; // Not above or on the parabola
+    }
+  
+    // Check if the point is below or on the line y = x
+    if (y > x) {
+      return false; // Not below or on y = x
+    }
+  
+    // Check if the point is below or on the line y = -x
+    if (y > -x) {
+      return false; // Not below or on y = -x
+    }
+  
+    // If all conditions are met, the point is in the shaded region
+    return true;
+  }
+  
+let x = prompt("x?",'')
+let y = prompt("y?",'');
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+*/
+
+/* //SECOND ONE
+function isPointInShadedRegion(x, y) {
+    // Check if the point is inside or on the circle x^2 + y^2 = 1
+    if (x * x + y * y > 1) {
+      return false; // Not inside or on the circle
+    }
+  
+    // Check if the point is below or on the line y = x, but only in the 1st
+    if (x >= 0 && y >= 0) {
+        if (y < x) {
+          return false; // Not below or on the line y = x in the 1st quadrant
+        }
+      }
+    
+  
+    // If both conditions are met, the point is in the shaded region
+    return true;
+}
+
+  // Example usage:
+  let x = prompt("x?",'')
+  let y = prompt("y?",'');
+  
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+*/
+
+
+/* // THIRD ONE
+function isPointInShadedRegion(x, y) {
+    // Check if the point is inside or on the circle
+    if (x * x + y * y > 1) {
+      return false;
+    }
+  
+    // Check if the point is in the excluded slices
+    if (x < 0) {
+      if (y > 0  && y < -x) {
+        return false; // Excluded slice in the second quadrant
+      }
+      if (y < 0 && y < x) {
+        return false; // Excluded slice in the third quadrant
+      }
+    }
+  
+    return true;
+  }
+
+
+  // Example usage:
+  let x = prompt("x?",'')
+  let y = prompt("y?",'');
+  
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+*/
+
+/* // FOURTH ONE
+function isPointInShadedRegion(x, y) {
+    // Check if the point is inside or on the circle
+    if ((y < 2 * x * x) || (y < 1-x) || (x>1)) {
+      return false;
+    }
+  
+    return true;
+  }
+
+
+  // Example usage:
+  let x = prompt("x?",'')
+  let y = prompt("y?",'');
+  
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+*/
+
+/* // FIFTH ONE
+function isPointInShadedRegion(x, y) {
+    // Check if the point is inside or on the circle
+    if (x * x + y * y <= 1) {
+      // If inside the circle, check if it's below y = 1
+      return y <= 1;
+    } else {
+      // If outside the circle, check if it's below y = 1 and above y = x - 1
+      if (y > 1) {
+        return false; // Not below y = 1
+      }
+      if (y < x - 1) {
+        return false; // Not above y = x - 1
+      }
+      return true; // Outside the circle, between y = 1 and y = x - 1
+    }
+  }
+
+  let x = prompt("x?",'')
+  let y = prompt("y?",'');
+  
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+
+*/
+
+/* // 6TH ONE
+function isPointInShadedRegion(x, y) {
+    // Check if the point is inside or on the circle
+    if (x * x + y * y <= 1) {
+      // If inside the circle, check if it's below y = 1 and to the left of x = 1
+      return y <= 1 && x <= 1;
+    } else {
+      // If outside the circle, check if it's in the first quadrant and between y = 1 and x = 1
+      if (x > 0 && y > 0 && y <= 1 && x <= 1) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
+  let x = prompt("x?",'')
+  let y = prompt("y?",'');
+  
+alert(`Point (${x}, ${y}) is in the shaded region: ${isPointInShadedRegion(x,y)}`);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
